@@ -1,20 +1,16 @@
 import './App.css';
-import Header from '../Header/Header';
-import ControlSideBar from '../ControlSideBar/ControlSideBar';
-import MainSideBar from '../MainSideBar/MainSideBar';
-import Footer from '../Footer/Footer';
 import MainContent from '../MainContent/MainContent';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      <Header></Header>
-      <MainSideBar></MainSideBar>
-      <MainContent></MainContent>
-      <Footer></Footer>
-      <ControlSideBar></ControlSideBar>
-      <div className="control-sidebar-bg"></div>
-    </div>    
+      <Router>
+        <Routes>
+          <Route path='/*' Component={MainContent} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
