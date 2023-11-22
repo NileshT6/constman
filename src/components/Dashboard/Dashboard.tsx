@@ -1,3 +1,5 @@
+import  { Breadcrumbs } from "../Breadcrumbs/Bredcrumbs";
+
 function Dashboard() {
     return (
         <div>
@@ -6,12 +8,11 @@ function Dashboard() {
                     Dashboard
                     <small>Version 2.0</small>
                 </h1>
-                <ol className="breadcrumb">
-                    <li><a href="#"><i className="fa fa-dashboard"></i> Home</a></li>
-                    <li className="active">Dashboard</li>
-                </ol>
+              
+                <Breadcrumbs name="Dashboard"></Breadcrumbs>
             </section>
             <section className="content">
+            
             </section>
         </div>
     )

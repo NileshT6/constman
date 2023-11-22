@@ -1,3 +1,5 @@
+import {Breadcrumbs} from "../Breadcrumbs/Bredcrumbs";
+
 function Product() {
     return (
         <div>
@@ -6,10 +8,7 @@ function Product() {
                     Product
                     <small>Details</small>
                 </h1>
-                <ol className="breadcrumb">
-                    <li><a href="#"><i className="fa fa-dashboard"></i> Home</a></li>
-                    <li className="active">Product</li>
-                </ol>
+                <Breadcrumbs name="Product"></Breadcrumbs>
             </section>
             <section className="content">
             </section>
